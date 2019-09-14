@@ -26,7 +26,6 @@
 	error_reporting(E_ALL);
 	include('../BD/Conexion.php');
 	mysqli_set_charset($conn, 'utf8');
-	echo('rut= '.$rut);
 	/*query*/
 	$sql='SELECT CHILEDIRECTO.CREAR_PEDIDO
 			("
