@@ -21,14 +21,19 @@
 				'apellido_paterno'=>$row['APELLIDO_PATERNO'],
 				'apellido_materno'=>$row['APELLIDO_MATERNO'],
 				'direccion'=>$row['DIRECCION'],
+				'id_region'=>$row['ID_REGION'],
 				'region'=>$row['REGION'],
+				'id_provincia'=>$row['ID_PROVINCIA'],
 				'provincia'=>$row['PROVINCIA'],
+				'id_comuna'=>$row['ID_COMUNA'],
 				'comuna'=>$row['COMUNA'],
 				'fono'=>$row['FONO'],
 				'correo'=>$row['CORREO'],
+				'id_tipo_usuario'=>$row['ID_TIPO_USUARIO'],
 				'tipo_usuario'=>$row['TIPO_USUARIO'],
 				'usuario'=>$row['USUARIO'],
 				'contrasena'=>$row['CONTRASENA'],
+				'id_estado'=>$row['ID_ESTADO'],
 				'estado'=>$row['ESTADO']
 			);
 			array_push($json_array['usuarios'],$region);

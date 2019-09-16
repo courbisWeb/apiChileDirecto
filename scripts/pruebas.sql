@@ -61,3 +61,22 @@ SELECT CHILEDIRECTO.CREAR_USUARIO
 ,'COURBIS'
 ,'12345678'
 ) AS RETORNO;
+
+/*ACTUALIZAR USUARIO*/
+SELECT CHILEDIRECTO.ACTUALIZAR_USUARIO
+			(22
+			,TRIM('18356676-8')
+			,'Julio'
+			,'$Courbis'
+			,'Palma'
+			,'Elicura6186'
+			,7
+			,23
+			,97
+			,'955329446'
+			,'ju.courbis@gmail.com'
+			,2
+			,'ACTUALIZA'
+			,'CONTRASENAACTUALIZA'
+			) AS RETORNO;
+/*FIN ACTUALIZAR USUARIO*/			

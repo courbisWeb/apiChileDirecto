@@ -1,4 +1,5 @@
 	<?php  
+	$id_usuario=$_GET['id_usuario'];
 	$rut=$_GET['rut'];
 	$nombres=$_GET['nombres'];
 	$apellido_paterno=$_GET['apellido_paterno'];
@@ -20,9 +21,9 @@
 	include('../BD/Conexion.php');
 	mysqli_set_charset($conn, 'utf8');
 	/*query*/
-	$sql='SELECT CHILEDIRECTO.CREAR_USUARIO
-			(TRIM("
-			'.$rut.'")
+	$sql='SELECT CHILEDIRECTO.ACTUALIZAR_USUARIO
+			('.$id_usuario.'
+			,TRIM("'.$rut.'")
 			,"'.$nombres.'"
 			,"'.$apellido_paterno.'"
 			,"'.$apellido_materno.'"
@@ -45,7 +46,8 @@
 	if($result->num_rows>0){
 		//die('Si se pudo');
 		while($row=$result->fetch_assoc()){
-				echo $row['RETORNO'];
+			echo $row['RETORNO'];
+			
 		}
 	}	
 ?>	
